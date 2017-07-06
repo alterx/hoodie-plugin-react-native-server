@@ -11,10 +11,18 @@ See https://github.com/hoodiehq/hoodie/issues/732 for further details.
 
 ## Usage
 
-In your already existing Hoodie project's `package.json` add:
+Just run
+
+```
+npm install hoodie-plugin-react-native-server
+```
+
+in your already existing Hoodie project and add
 
 ```
 "hoodie": {
   "plugins": ["hoodie-plugin-react-native-server"]
 }
 ```
+
+to the project's `package.json`. After that, you should be good to go!
