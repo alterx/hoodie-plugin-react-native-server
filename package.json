@@ -1,6 +1,6 @@
 {
   "name": "hoodie-plugin-react-native-server",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Integrate Hoodie Server with React Native",
   "main": "hoodie/server.js",
   "scripts": {
