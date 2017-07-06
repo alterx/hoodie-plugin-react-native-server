@@ -1,11 +1,36 @@
 {
-  "name": "hoodie-plugin-react-native",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hoodie-plugin-react-native-server",
+  "version": "0.5.0",
+  "description": "Integrate Hoodie Server with React Native",
+  "main": "hoodie/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d hoodie",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build",
+    "release": "np"
   },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alterx/hoodie-plugin-react-native-server"
+  },
+  "keywords": [
+    "hoodie",
+    "react native"
+  ],
   "author": "Carlos Vega",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "jest": "^20.0.4",
+    "np": "^2.16.0",
+    "watch": "^1.0.2"
+  }
 }
