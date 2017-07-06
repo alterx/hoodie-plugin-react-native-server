@@ -8,7 +8,7 @@
     "build": "babel src -d hoodie",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "prepublish": "npm run build",
+    "prepare": "jest && npm run build",
     "release": "np"
   },
   "babel": {
